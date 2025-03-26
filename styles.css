@@ -1,0 +1,169 @@
+.pixelify-sans {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-image: url('https://img.itch.zone/aW1nLzEzNzczMjU3LmdpZg==/original/W%2Fd8%2BO.gif');
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    margin-bottom: 5px;
+    min-height: 100vh;
+}
+
+article{
+    flex: 2;
+    overflow-y: auto;
+    font-size: 15px;
+    background-color: #FAFAFA;
+    border: 5px solid black;
+}
+
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+    border: 5px solid black;
+}
+
+header {
+    border: none;
+}
+
+footer {
+    background-color: rgb(228, 245, 202);
+    border: 5px solid black;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+}
+
+nav {
+    background-color: rgb(228, 245, 202);
+    border: 5px solid black;
+}
+
+nav ul li {
+    line-height: 0;
+}
+
+.nav-links {
+    font-family:  "Pixelify Sans", sans-serif;
+    font-size: 30px;
+}
+
+@media (max-width: 895px) {
+    main {
+        padding-top: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 90px; 
+    }
+}
+
+.link-underline:hover{
+    text-decoration: underline;
+    color: coral;
+}
+
+ul li {
+    line-height: 150%
+}
+
+p {
+    line-height: 150%;
+}
+
+a {
+    color: coral;
+}
+
+h1 {
+    color: coral;
+    font-family:  "Pixelify Sans", sans-serif;
+}
+
+h2 {
+    color: rgb(142, 154, 123);
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+h3 {
+    color: rgb(142, 154, 123);
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.right {
+    padding: 10pt;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    background-color: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 20px;
+    padding: 15px;
+}
+
+pre {
+    background-color: #eee;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tutorial-explanation {
+    font-style: italic;
+}
+
+.question {
+    margin-bottom: 15px;
+    font-family: monospace;
+}
+
+.question p {
+    font-weight: bold;
+}
+
+.options {
+    margin-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn:hover {
+    background-color: coral;
+    color: black;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}

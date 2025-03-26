@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Happy C Tutorial </title>
+		<meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+        
+        <script src="behavior.js"></script>
+	</head>
+	<body class="works_on_smartphone">
+        <header>
+            <nav>
+                <div class="right">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://15.237.84.242"  target="_blank">
+                        <img src="https://i.pinimg.com/564x/7d/f2/cc/7df2cc2a2a2d14d93354abe29d435ae8.jpg" width="40"/>
+                    </a>
+                    
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/intent/tweet?url=http://15.237.84.242/&text=Check out this website"  target="_blank">
+                        <img src="https://images.icon-icons.com/2873/PNG/512/twitter_pixel_logo_icon_181924.png" width="40"/>
+                    </a>
+
+                    <!-- LinkedIn Share Button -->
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=http://15.237.84.242/" target="_blank">
+                        <img src="https://images.icon-icons.com/2873/PNG/512/linkedin_pixel_logo_icon_181925.png" width="40"/>
+                    </a>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html" class="link-underline"> Happy C Coding </a></li>
+                    <li><a href="tweets.html" class="link-underline"> Tweets </a></li>
+                    <li><a href="ctutorial.html" class="link-underline"> Tutorial </a></li>
+                    <li><a href="shortquiz.html" class="link-underline"> Quiz </a></li>
+                    <li class="logo">
+                        <a href="index.html">
+                            <img src="https://media0.giphy.com/media/yOCzPNwpMMlFUlfLk8/source.gif" width="70"/>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <h1>Introduction to C Programming 💻</h1>
+                <a href="http://15.237.84.242/ctutorial.html#disqus_thread"> Comments </a>
+                <hr>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KJgsSFOSQv0?si=UW0bI9CAy7iHRYMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <a href="https://www.w3schools.com/c/c_intro.php" target="_blank">
+                    <button type="button" class="btn" >Learn More!</button>
+                </a>
+
+                <section>
+                    <h2>1. Hello, World!</h2>
+                    
+                    <pre>
+                        <code>
+        #include &lt;stdio.h&gt;
+
+        int main() {
+            printf("Hello, World!\n");
+            return 0;
+        }
+                        </code>
+                    </pre>
+                    <p class="tutorial-explanation">Explanation: This is the simplest C program that prints 
+                    "Hello, World!" to the screen.
+                    </p>
+                    <a href="https://cplayground.com/" target="_blank">
+                        <button type="button" class="btn" >Try in Sandbox!</button>
+                    </a>
+                </section>
+                
+                <section>
+                    <h2>2. Basic Syntax and Structure</h2>
+                    <pre>
+                        <code>
+        #include &lt;stdio.h&gt;
+        
+        int main() {
+            // This is a single-line comment
+            /* This is a 
+            multi-line comment */
+            printf("Basic Syntax and Structure!\n");
+            return 0;
+        }
+                        </code>
+                    </pre>
+                    <p class="tutorial-explanation">Explanation: ​The code includes the standard I/O library 
+                        with #include &lt;stdio.h&gt;, defines the main function as the program's entry point, 
+                        uses printf to display a message, and returns 0 to indicate successful execution.
+                    </p>
+                    <a href="https://cplayground.com/" target="_blank">
+                        <button type="button" class="btn" >Try in Sandbox!</button>
+                    </a>
+                </section>
+                
+                <section>
+                    <h2>3. Variables and Data Types</h2>
+                    <pre>
+                        <code>
+        #include &lt;stdio.h&gt;
+        
+        int main() {
+            int age = 25;
+            float pi = 3.14;
+            char letter = 'A';
+            
+            printf("Age: %d\n", age);
+            printf("Pi: %.2f\n", pi);
+            printf("Letter: %c\n", letter);
+            
+            return 0;
+        }
+                        </code>
+                    </pre>
+                    <p class="tutorial-explanation">Explanation: This program declares variables of different 
+                        data types (integer, float, and char) and prints their values using the printf function. 
+                        The output will display the age as an integer, the value of Pi with two decimal places, 
+                        and a character letter.
+                    </p>
+                    <a href="https://cplayground.com/" target="_blank">
+                        <button type="button" class="btn" >Try in Sandbox!</button>
+                    </a>
+                </section>
+
+                <section>
+                    <h2>4. Operators in C</h2>
+                    <pre>
+                        <code>
+        #include &lt;stdio.h&gt;
+        
+        int main() {
+            int a = 10, b = 5;
+            printf("Addition: %d\n", a + b);
+            printf("Subtraction: %d\n", a - b);
+            printf("Multiplication: %d\n", a * b);
+            printf("Division: %d\n", a / b);
+            printf("Modulus: %d\n", a % b);
+        
+            return 0;
+        }
+                        </code>
+                    </pre>
+                    <p class="tutorial-explanation">Explanation: This program performs basic arithmetic 
+                        operations like addition, subtraction, multiplication, division, and modulus on 
+                        two integers (a and b), and prints the results using printf.
+                    </p>
+                    <a href="https://cplayground.com/" target="_blank">
+                        <button type="button" class="btn" >Try in Sandbox!</button>
+                    </a>
+                </section>
+
+                <section>
+                    <h2>5. Control Flow Statements</h2>
+                    <pre>
+                        <code>
+        #include &lt;stdio.h&gt;
+        
+        int main() {
+            int x = 10;
+            
+            // if-else statement
+            if (x &gt; 5) {
+                printf("x is greater than 5\n");
+            } else {
+                printf("x is less than or equal to 5\n");
+            }
+        
+            // switch statement
+            switch(x) {
+                case 10:
+                    printf("x is 10\n");
+                    break;
+                default:
+                    printf("x is not 10\n");
+            }
+        
+            // loop
+            for(int i = 0; i &lt; 3; i++) {
+                printf("Iteration: %d\n", i);
+            }
+        
+            return 0;
+        }
+                        </code>
+                    </pre>
+                    <p class="tutorial-explanation">Explanation: This program demonstrates conditional and 
+                        loop control structures in C. It uses an if-else statement to check if x is greater 
+                        than 5, a switch statement to check if x equals 10, and a for loop to iterate and 
+                        print values from 0 to 2.
+                    </p>
+                    <a href="https://cplayground.com/" target="_blank">
+                        <button type="button" class="btn" >Try in Sandbox!</button>
+                    </a>
+                </section>
+
+                <section>
+                    <h2>6. Functions in C</h2>
+                    <pre>
+                        <code>
+        #include &lt;stdio.h&gt;
+        
+        int add(int a, int b);
+        
+        int main() {
+            int result = add(5, 3);
+            printf("The result of addition is: %d\n", result);
+            return 0;
+        }
+        
+        int add(int a, int b) {
+            return a + b;
+        }
+                    </code>
+                    </pre>
+                    <p class="tutorial-explanation">Explanation: This program defines a function add that takes 
+                        two integers and returns their sum. In main, it calls the add function with the values 5 
+                        and 3, then prints the result.
+                    </p>
+                    <a href="https://cplayground.com/" target="_blank">
+                        <button type="button" class="btn" >Try in Sandbox!</button>
+                    </a>
+                </section>
+
+                <section>
+                    <h2>7. Arrays and Strings</h2>
+                    <pre>
+                        <code>
+        #include &lt;stdio.h&gt;
+        
+        int main() {
+            // Array of integers
+            int arr[3] = {1, 2, 3};
+            
+            // Print array elements
+            for(int i = 0; i &lt; 3; i++) {
+                printf("arr[%d] = %d\n", i, arr[i]);
+            }
+        
+            // String handling
+            char str[] = "Hello, C!";
+            printf("String: %s\n", str);
+            
+            return 0;
+        }
+                        </code>
+                    </pre>
+                    <p class="tutorial-explanation">Explanation: This program demonstrates working with arrays 
+                        and strings in C. It defines an integer array `arr` and prints its elements using a 
+                        `for` loop. It also defines a string `str` and prints it using `printf`.
+                    </p>
+                    <a href="https://cplayground.com/" target="_blank">
+                        <button type="button" class="btn" >Try in Sandbox!</button>
+                    </a>
+                </section>
+
+                <section>
+                    <h2>8. Pointers</h2>
+                    <pre>
+                        <code>
+        #include &lt;stdio.h&gt;
+        
+        int main() {
+            int num = 10;
+            int *ptr = &num;
+        
+            printf("Value of num: %d\n", *ptr);
+            printf("Address of num: %p\n", ptr);
+            
+            return 0;
+        }
+                        </code>
+                    </pre>
+                    <p class="tutorial-explanation">Explanation: This program demonstrates pointer usage in C. 
+                        It defines a pointer `ptr` that stores the address of the variable `num`. The program 
+                        then prints the value of `num` through the pointer and its memory address.
+                    </p>
+                    <a href="https://cplayground.com/" target="_blank">
+                        <button type="button" class="btn" >Try in Sandbox!</button>
+                    </a>
+                </section>
+
+                <section>
+                    <h2>9. Structures and Unions</h2>
+                    <pre>
+                        <code>
+        #include &lt;stdio.h&gt;
+        
+        struct Person {
+            char name[50];
+            int age;
+        };
+        
+        int main() {
+            struct Person person1 = {"Alice", 25};
+            printf("Name: %s\n", person1.name);
+            printf("Age: %d\n", person1.age);
+        
+            union Data {
+                int i;
+                float f;
+                char str[20];
+            };
+            
+            union Data data;
+            data.i = 5;
+            printf("Data (int): %d\n", data.i);
+            
+            return 0;
+        }
+                        </code>
+                    </pre>
+                    <p class="tutorial-explanation">Explanation: This program demonstrates the use of structures 
+                        and unions in C. It defines a `struct Person` to store a name and age, then prints the 
+                        values for `person1`. It also defines a `union Data` that can store an integer, float, 
+                        or string, and prints the integer value stored in the union.
+                    </p>
+                    <a href="https://cplayground.com/" target="_blank">
+                        <button type="button" class="btn" >Try in Sandbox!</button>
+                    </a>
+                </section>
+
+                <section>
+                    <h2>10. File Handling in C</h2>
+                    <pre>
+                        <code>
+        #include &lt;stdio.h&gt;
+        
+        int main() {
+            FILE *file = fopen("test.txt", "w");
+        
+            if (file == NULL) {
+                printf("Could not open file\n");
+                return 1;
+            }
+        
+            fprintf(file, "This is a test file.\n");
+            fclose(file);
+        
+            file = fopen("test.txt", "r");
+            char line[100];
+            fgets(line, sizeof(line), file);
+            printf("File contents: %s", line);
+            fclose(file);
+        
+            return 0;
+        }
+                        </code>
+                    </pre>
+                    <p class="tutorial-explanation">Explanation: This program demonstrates file handling in C. 
+                        It opens a file called "test.txt" for writing, writes a line of text to it, then closes 
+                        the file. It reopens the file in read mode, reads the contents, and prints them to the 
+                        console.
+                    </p>
+                    <a href="https://cplayground.com/" target="_blank">
+                        <button type="button" class="btn" >Try in Sandbox!</button>
+                    </a>
+                </section>
+
+                <section>
+                    <h2>11. Memory Management</h2>
+                    <pre><code>
+        #include &lt;stdio.h&gt;
+        #include &lt;stdlib.h&gt;
+        
+        int main() {
+            int *arr = (int *)malloc(5 * sizeof(int));
+        
+            if (arr == NULL) {
+                printf("Memory allocation failed\n");
+                return 1;
+            }
+        
+            for (int i = 0; i &lt; 5; i++) {
+                arr[i] = i + 1;
+            }
+        
+            for (int i = 0; i &lt; 5; i++) {
+                printf("arr[%d] = %d\n", i, arr[i]);
+            }
+        
+            free(arr);
+        
+            return 0;
+        }
+                        </code>
+                    </pre>
+                    <p class="tutorial-explanation">Explanation: This program demonstrates dynamic memory 
+                        allocation in C using `malloc`. It allocates memory for an array of 5 integers, 
+                        assigns values to the array, prints them, and then frees the allocated memory using 
+                        `free`. Other memory allocation functions in C include:
+
+                        <ul class="tutorial-explanation"> 
+                            <li> `calloc`: Allocates memory for an array and initializes it to zero. <br>
+                            Example: `int *arr = (int *)calloc(5, sizeof(int));` </li>
+                            <li>`realloc`: Changes the size of a previously allocated memory block. <br>
+                            Example: `arr = (int *)realloc(arr, new_size);` </li>
+                        </ul>
+                    </p>
+                    <a href="https://cplayground.com/" target="_blank">
+                        <button type="button" class="btn" >Try in Sandbox!</button>
+                    </a>
+                </section>
+
+
+            </article>
+
+            <aside>
+                <p>
+                    <div id="disqus_thread"></div>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </p>
+            </aside>
+            
+        </main>
+
+        <footer>
+            <p>Made by Himaja Kakade for 
+                <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>
+            </p>
+        </footer>
+
+        <script>
+            var disqus_config = function () {
+            this.page.url = 'http://15.237.84.242/ctutorial.html'; 
+            this.page.identifier = 'ctutorial';
+            };
+            
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://happy-c-coding.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <script id="dsq-count-scr" src="//happy-c-coding.disqus.com/count.js" async></script>
+    </body>
+</html>
