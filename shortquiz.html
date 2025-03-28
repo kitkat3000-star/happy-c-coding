@@ -14,7 +14,7 @@
         <script src="behavior.js"></script>
         <script src="quiz.js"></script>
     </head>
-    <body class="works_on_smartphone">
+    <body class="works_on_smartphone" style="background-image: url('https://i.pinimg.com/originals/74/5c/c9/745cc90fcc688569610f84bc5d2b2fd6.gif'); background-size: cover;">
         <header>
             <nav>
                 <div class="right">
@@ -53,58 +53,34 @@
                 <h1>C Programming Tutorial Quiz 📝</h1>
                 <a href="http://15.237.84.242/shortquiz.html#disqus_thread"> Comments </a>
                 <hr>
-                <p>Test your knowledge on C programming concepts by answering the following questions!</p>
-                <img src="https://i.redd.it/5zqsekzw7sb71.gif" alt="timer" class="small">
-                <form id="quizForm">
-                    <div class="question">
-                        <p>1. Which of the following is the correct syntax for a main function in C?</p>
-                        <div class="options">
-                            <input type="radio" name="q1" value="a"> int main() { } <br>
-                            <input type="radio" name="q1" value="b"> void main() { } <br>
-                            <input type="radio" name="q1" value="c"> main() { } <br>
-                        </div>
-                    </div>
+                <p class="intro">
+                    Test your knowledge on C programming concepts by answering the following questions!
+                    <img src="https://i.redd.it/5zqsekzw7sb71.gif" alt="timer" class="timer-img">
+                </p>
 
-                    <div class="question">
-                        <p>2. How do you define a variable in C that holds an integer?</p>
-                        <div class="options">
-                            <input type="radio" name="q2" value="a"> int num; <br>
-                            <input type="radio" name="q2" value="b"> float num; <br>
-                            <input type="radio" name="q2" value="c"> char num; <br>
-                        </div>
-                    </div>
+                <div class="image-container">
+                    <img src="https://mooremomentum.com/static/Press%20Start-a9a1f14bed08d7d5658318ee853cfe67.gif" alt="start-gif" id="smart_thumbnail" class="start-img">
+                </div>
+                
+                <div class="start-quiz">
+                    <button class="btn">Start Quiz</button>
+                </div>
 
-                    <div class="question">
-                        <p>3. Which statement is used to print output to the console in C?</p>
-                        <div class="options">
-                            <input type="radio" name="q3" value="a"> print("Hello World"); <br>
-                            <input type="radio" name="q3" value="b"> cout &lt;&lt; "Hello World"; <br>
-                            <input type="radio" name="q3" value="c"> printf("Hello World"); ><br>
-                        </div>
-                    </div>
+                <div class="quiz-container">
+                    
+                    <div class="timer"></div>
+                    
+                    <h2 class="question"></h2>
+                        <div class="options"></div>
+                    
+                    <button class="btn">Next</button>
+                </div>
 
-                    <div class="question">
-                        <p>4. What is the correct way to declare a pointer to an integer in C?</p>
-                        <div class="options">
-                            <input type="radio" name="q4" value="a"> int* ptr; <br>
-                            <input type="radio" name="q4" value="b"> int ptr*; <br>
-                            <input type="radio" name="q4" value="c"> ptr int*; <br>
-                        </div>
-                    </div>
+                <div class="image-container">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d36a4a34259355.56ca4de33c005.gif" alt="result-gif" class="end-img">
+                </div>
 
-                    <div class="question">
-                        <p>5. Which of these is a valid way to create a string in C?</p>
-                        <div class="options">
-                            <input type="radio" name="q5" value="a"> char str[] = "Hello"; <br>
-                            <input type="radio" name="q5" value="b"> string str = "Hello"; <br>
-                            <input type="radio" name="q5" value="c"> char str(5) = "Hello"; <br>
-                        </div>
-                    </div>
-
-                    <button type="button" class="btn" onclick="checkQuizAnswers()">Submit</button>
-                </form>
-
-                <div id="quizResult" class="result"></div>
+                <div class="result"></div>
             </article>
         
             <aside>
@@ -120,7 +96,7 @@
             </p>
         </footer>
         
-        <script>
+        <!-- <script>
             var disqus_config = function () {
             this.page.url = 'http://15.237.84.242/shortquiz.html'; 
             this.page.identifier = 'shortquiz';
@@ -133,6 +109,6 @@
             (d.head || d.body).appendChild(s);
             })();
         </script>
-        <script id="dsq-count-scr" src="//happy-c-coding.disqus.com/count.js" async></script>
+        <script id="dsq-count-scr" src="//happy-c-coding.disqus.com/count.js" async></script> -->
     </body>
 </html>

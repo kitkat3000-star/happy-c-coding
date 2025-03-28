@@ -68,7 +68,7 @@ nav ul li {
 
 @media (max-width: 768px) {
     main {
-        padding-top: 90px; 
+        padding-top: 100px; 
     }
 }
 
@@ -129,6 +129,14 @@ pre {
     margin-bottom: 10px;
 }
 
+.intro {
+    background-color: #eee;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
 .btn {
     margin-top: 10px;
     padding: 10px 20px;
@@ -140,30 +148,111 @@ pre {
     font-weight: bold;
 }
 
-.tutorial-explanation {
-    font-style: italic;
-}
-
-.question {
-    margin-bottom: 15px;
-    font-family: monospace;
-}
-
-.question p {
-    font-weight: bold;
-}
-
-.options {
-    margin-left: 20px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
 .btn:hover {
     background-color: coral;
     color: black;
 }
 
-.result {
-    margin-top: 20px;
+.italic-line {
+    font-style: italic;
+}
+
+.start-quiz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-quiz .btn {
+    width: 180px;
+    font-size: 15px;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: none;
+}
+
+.quiz-container .btn {
+    width: 180px;
+    font-size: 15px;
+}
+
+.question {
+    font-size: 22px;
+    background: white;
+    color: black;
+    padding: 16px;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 700px){
+    .options {
+        grid-template-columns: 1fr;
+    }
+}
+
+.option {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    background: coral;
+    color: black;
+    cursor: pointer;
+}
+
+.timer {
     font-weight: bold;
+    text-align: right;
+}
+
+.danger {
+    color: crimson;
+}
+
+.timer-img {
+    width: 30px;
+    height: 30px;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.right-answer {
+    background-color: green;
+}
+
+.wrong-answer {
+    background-color: crimson;
+}
+
+.result {
+    display: none;
+}
+
+.question-number {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    background: black;
+    margin-right: 5px;
+    color: white;
+    padding: 7px;
+    border-radius: 8px;
+}
+
+.end-img {
+    display: none;
+    width: 700px;
+    height: 400px;
 }
