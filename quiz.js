@@ -1,4 +1,5 @@
-// Learnt from watching 
+// Learnt from watching https://www.youtube.com/watch?v=J3VxEGcc7Zw
+// Short Quiz handling
 document.addEventListener("DOMContentLoaded", () => {
     let quizData = [
         {
