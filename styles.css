@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    background-image: url('https://img.itch.zone/aW1nLzEzNzczMjU3LmdpZg==/original/W%2Fd8%2BO.gif');
+    background-image: url('./images/background-1.gif');
 }
 
 main{
