@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title> Happy C Projects </title>
+		<meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+        
+        <script src="behavior.js"></script>
+	</head>
+    <body class="works_on_smartphone">
+        <header>
+            <div class="nav">
+                <div class="right">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://15.237.84.242"  target="_blank">
+                        <img src="./images/facebook-icon.jpg" alt="Facebook-icon" width="40">
+                    </a>
+                    
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/intent/tweet?url=http://15.237.84.242/&amp;text=Check%20out%20this%20website"  target="_blank">
+                        <img src="./images/twitter-icon.webp" alt="Twitter-icon" width="40">
+                    </a>
+
+                    <!-- LinkedIn Share Button -->
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=http://15.237.84.242/" target="_blank">
+                        <img src="./images/linkedin-icon.webp" alt="Linkdeln-icon" width="40">
+                    </a>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html" class="link-underline"> Happy C Coding </a></li>
+                    <li><a href="tweets.html" class="link-underline"> Tweets </a></li>
+                    <li><a href="projects.html" class="link-underline"> Projects </a></li>
+                    <li><a href="ctutorial.html" class="link-underline"> Tutorial </a></li>
+                    <li><a href="shortquiz.html" class="link-underline"> Quiz </a></li>
+                    <li class="logo">
+                        <a href="index.html">
+                            <img src="./images/cat.gif" alt="round-cat" width="70">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <h1> My C Projects 💼</h1>
+                <a href="http://15.237.84.242/projects.html#disqus_thread"> Comments </a>
+                <hr>
+
+                <p class="intro">
+                    This page showcases my journey with the C programming language. I worked on these projects
+                    for my algorithms and data structures class. Here, you'll find a collection of projects 
+                    where I've applied core C concepts like memory management, pointers, and structured 
+                    programming. Each project reflects my problem-solving approach and growing expertise 
+                    in low-level programming.
+                </p>
+
+                <div>
+                    <h2> 1. Simple dictionary using a linked list in C </h2>
+                    <div class="image-container">
+                        <img src="./images/linked-list.png" alt="linked list">
+                    </div>
+                    <h3> What is a Linked List??</h3>
+                    <h4>The Train of Data 🚂</h4>
+                    <p>Imagine you’re at a train station, and instead of one long train, 
+                        there are train cars connected one after another. Each car has two things:</p>
+                    <ul>
+                        <li>Passengers (data): The information stored in that train car.</li>
+                        <li>A connection to the next train car: A link that tells where the next car is.</li>
+                    </ul>
+                    
+                    <p>But here’s the twist: Unlike a normal train where you can easily go to the 
+                        previous car, a basic Linked List only knows where the next car is! If you 
+                        want to reach the last car, you have to start from the front and move one by one.
+                    </p>
+
+                    <h4>Types of Linked Lists:</h4>
+                    <ul>
+                        <li>Singly Linked List: The train moves forward only (each car only links to the 
+                            next one).</li>
+                        <li>Doubly Linked List: The train can move forward and backward (each car links 
+                            to both the next and previous ones).</li>
+                        <li>Circular Linked List: The train is infinite! The last car links back to the 
+                            first one.</li>
+                    </ul>
+                    <h3>My project</h3>
+                    <p>I created a simple dictionary using a <a href="https://www.programiz.com/dsa/linked-list" target="_blank">
+                        linked list</a> in C to store information from a dataset about the City of Melbourne. 
+                        This dictionary allowed users to search for footpath information using attributes 
+                        from the dataset as keys.
+                    </p>
+                    <p>
+                        To build the dictionary, I read data from a file and inserted each footpath record 
+                        as a node in a linked list. Additionally, I implemented a method to search for a
+                        key within the list and output any matching records. Since keys were not guaranteed 
+                        to be unique, multiple records could be retrieved for a single search.
+                    </p>
+                
+                    <h2>2. PR quadtree </h2>
+                    <div class="image-container">
+                        <img src="./images/quadtree.png" alt="quadtree">
+                    </div>
+                    <h3>What is a PR Quadtree??</h3>
+                    <h4>The City Map of Data 🗺️</h4>
+                    <p>Imagine you’re looking at a map of a city, and you want to organize it efficiently. 
+                        Instead of storing every single location individually, you divide the map into four regions. 
+                        Each of these regions can be further split into four smaller regions, just like zooming into a digital map.</p>
+                
+                    <p>This is how a Point Region (PR) Quadtree works! It breaks down space into four quadrants
+                        whenever there are multiple points in the same area, helping efficiently store and search spatial data.</p>
+                
+                    <h4>How It Works:</h4>
+                    <ul>
+                        <li>Each node represents a region. If there are too many points in one region, 
+                            it splits into four smaller regions.</li>
+                        <li>Each region can contain at most one point. If a new point is added in an 
+                            occupied region, it divides further.</li>
+                        <li>The tree grows dynamically. Only areas with data are divided, keeping memory 
+                            usage efficient.</li>
+                    </ul>
+                
+                    <h4>Applications of PR Quadtrees:</h4>
+                    <ul>
+                        <li>🗺️ Geographical Mapping: Used in GPS and mapping applications.</li>
+                        <li>🎮 Game Development: Helps manage large game worlds efficiently.</li>
+                        <li>🔍 Spatial Searching: Quickly finds objects in 2D space.</li>
+                        <li>🛰️ Image Processing: Used in image compression and terrain modeling.</li>
+                    </ul>
+                  
+                    <h3>My project</h3>
+                    <p>I implemented a <a href="https://jimkang.com/quadtreevis/" target="_blank">PR quadtree</a> to store 
+                        and search for data points efficiently, this was an extension to the previous city of 
+                        Melbourne data assignment. 
+                        The implementation supported inserting data points, searching for individual points, 
+                        and retrieving all points within a query rectangle. 
+                        For insertion, if the tree was empty and the point was within bounds, it became the root. 
+                        Otherwise, I recursively traversed the tree to find the correct position. If a black 
+                        leaf already contained a point, I split it into four children, continuing until the new 
+                        and existing points occupied separate black leaf nodes.
+                    </p> 
+                        
+                    <p>For searching, I traversed the tree, selecting child nodes based on the point's 
+                        location. If found, the associated information was returned; otherwise, the search 
+                        indicated the point was not stored. 
+                    </p>
+                        
+                    <p>For range queries, I recursively checked which child nodes overlapped with the query 
+                        rectangle, retrieving points from all black leaf nodes within the specified area.
+                    </p>
+
+                    <h2>3. Solver for the Flow Free game </h2>
+                    <div class="image-container">
+                        <img src="./images/flow-free.gif" alt="flow-free">
+                    </div>
+                    <h3>What is Dijkstra’s Algorithm??</h3>
+                    <h4>The GPS of Shortest Paths 🗺️</h4>
+                    <p>Imagine you’re in a city with many roads, and you need to find the shortest route from your house to a friend’s place. 
+                    Instead of randomly guessing which way to go, you use a GPS that calculates the quickest route based on distance. 
+                    That’s exactly what Dijkstra’s Algorithm does in the world of graphs.</p>
+                
+                    <p>This algorithm finds the shortest path from one starting point to all other points in a network, 
+                    just like a GPS finds the fastest way to multiple locations.</p>
+                
+                    <h4>How It Works:</h4>
+                    <ul>
+                        <li>Start from a chosen point (source) and give it a distance of zero.</li>
+                        <li>All other points start with an infinite distance (since we don’t know how far they are yet).</li>
+                        <li>Visit the nearest unvisited point and update distances to its neighbors if a shorter path is found.</li>
+                        <li>Repeat the process until all points have the shortest possible distance calculated.</li>
+                    </ul>
+                
+                    <h4>Applications of Dijkstra’s Algorithm:</h4>
+                    <ul>
+                        <li>🚗 Finding the shortest driving routes in Google Maps and GPS systems.</li>
+                        <li>🌍 Network routing in the Internet to send data efficiently.</li>
+                        <li>🎮 Pathfinding for game AI to navigate maps.</li>
+                        <li>💡 Planning electricity and water distribution in cities.</li>
+                    </ul>
+                    <h3>My project</h3>
+                    <p>In this programming assignment, I built a solver using Djikstra's Algorithm for the 
+                        <a href="https://www.bgames.com/game/flow-free-online/" target="_blank">Flow Free game</a>, 
+                        a puzzle dating back to 1897 and popularized in Japan as Numberlink. The game 
+                        involves connecting matching pairs of dots on a grid without overlapping paths. The 
+                        assignment code was adapted from the open-source terminal version by 
+                        <a href="https://mzucker.github.io/2016/08/28/flow-solver.html" target="_blank">mzucker.</a>
+                    </p> 
+                </div>
+            </article>
+
+            <aside>
+                <div id="disqus_thread"></div>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </aside>
+        </main>
+
+        <footer>
+            <p>Made by Himaja Kakade for 
+                <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>
+            </p>
+        </footer>
+
+        <!-- <script>
+            var disqus_config = function () {
+            this.page.url = 'http://15.237.84.242/projects.html'; 
+            this.page.identifier = 'Cprojects';
+            };
+            
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://happy-c-coding.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <script id="dsq-count-scr" src="//happy-c-coding.disqus.com/count.js" async></script> -->
+    </body>
+</html>
