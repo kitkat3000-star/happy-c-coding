@@ -1,6 +1,5 @@
 .pixelify-sans {
     font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
   }
@@ -46,12 +45,12 @@ footer {
     font-size: 20px;
 }
 
-nav {
+.nav {
     background-color: rgb(228, 245, 202);
     border: 5px solid black;
 }
 
-nav ul li {
+.nav ul li {
     line-height: 0;
 }
 

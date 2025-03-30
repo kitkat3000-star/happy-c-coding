@@ -127,8 +127,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
             options.appendChild(option);
         });
-
-
     };
 
     const retakeQuiz = () => {
